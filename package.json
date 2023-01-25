@@ -7,7 +7,7 @@
     "build:dev": "cross-env mode=development rollup -c rollup.config.js -w",
     "build": "cross-env mode=production rollup -c rollup.config.js",
     "prepare": "husky install",
-    "prepack": "npm run prepare",
+    "prepack": "npm run prepare && npm run build",
     "publish": "gitpkg publish"
   },
   "files": [
